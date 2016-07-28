@@ -26,7 +26,7 @@ public class BlankFragment extends Fragment {
 
     //1. Create Interface
     public interface ActivityInterface {
-        void doMagic();
+        void doMagic(String name);
     }
 
     //3. Pass a reference of that interface to the Fragment
@@ -50,7 +50,7 @@ public class BlankFragment extends Fragment {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mCallback.doMagic();
+                mCallback.doMagic("Karles is the best");
             }
         });
     }

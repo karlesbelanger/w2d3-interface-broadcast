@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity implements BlankFragment.Act
     private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Log.d(TAG, "doMagic: BroadcastReceiver");
+            String extraText = intent.getStringExtra("KEY").toString();
+            Log.d(TAG, "doMagic: BroadcastReceiver :" + extraText);
         }
     };
 
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity implements BlankFragment.Act
     }
 
     @Override
-    public void doMagic() {
-        Log.d(TAG, "doMagic: Interface");
+    public void doMagic(String name) {
+
+        Log.d(TAG, "doMagic: Interface :" + name);
     }
 }

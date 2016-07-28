@@ -40,6 +40,7 @@ public class BroadcastFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.CUSTOM_EVENT_KEY);
+                intent.putExtra("KEY", "LIBU ROXX");
                 LocalBroadcastManager
                         .getInstance(getActivity())
                         .sendBroadcast(intent);
