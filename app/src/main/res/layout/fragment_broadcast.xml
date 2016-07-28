@@ -3,18 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.fragmentcommunication.BlankFragment">
+    tools:context="com.example.fragmentcommunication.BroadcastFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />
 
     <Button
-        android:id="@+id/f_blank_btn"
+        android:id="@+id/f_broadcast_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Interface Fragment" />
+        android:text="Broadcast Button" />
 
 </LinearLayout>
